@@ -6,11 +6,7 @@ class AlunoBoletim{
         this._frequencia = frequencia
         
         let aprovacao = this._notas.getAprovacao()
-        console.log('Aprovado por nota?')
-        console.log(aprovacao)
         let aprovacaoFrequencia = this._frequencia.getAprovacao()
-        console.log('Aprovado por frequencia?')
-        console.log(aprovacaoFrequencia)
 
         if(aprovacao && aprovacaoFrequencia){
             this._situacao = 'Aprovado'
