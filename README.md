@@ -14,4 +14,7 @@ Tela inicial:
 ![tela inicio](https://github.com/EliasRLima/js-mvc-lab5/blob/master/screenshots/inicio.PNG)
 
 Telas com dados:
-![tela inicio](https://github.com/EliasRLima/js-mvc-lab5/blob/master/screenshots/cadastrando2.PNG)
+![tela dados](https://github.com/EliasRLima/js-mvc-lab5/blob/master/screenshots/cadastrando2.PNG)
+
+Tela teste:
+![tela teste](https://github.com/EliasRLima/Interface-MAPLER/blob/master/images/inicio.png)
