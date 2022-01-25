@@ -11,7 +11,7 @@ Importante: Todos os dados informados deverão ser validados e notificados.
 * Saída: Uma tabela informando o nome do aluno, primeira nota, segunda nota, percentual de frequência, prova final, a média final e situação (Aprovado ou Reprovado). Na mesma tabela terá um rodapé (tfoot) com o número de aprovados, reprovados e a média geral da turma.
 
 Tela inicial:
-![tela inicio](https://github.com/EliasRLima/js-mvc-lab5/tree/main/screenshots/inicio.PNG)
+![tela inicio](https://github.com/EliasRLima/js-mvc-lab5/blob/master/screenshots/inicio.PNG)
 
 Telas com dados:
-![tela inicio](https://github.com/EliasRLima/js-mvc-lab5/tree/main/screenshots/cadastrando2.PNG)
+![tela inicio](https://github.com/EliasRLima/js-mvc-lab5/blob/master/screenshots/cadastrando2.PNG)
