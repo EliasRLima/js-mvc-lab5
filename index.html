@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SUAP II</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href = "css/designe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid" id = "teste">
+            <div class="container">
+                    <h1 class="branco"><i class="fa fa-rocket" style="font-size:80px;color:#007BFF"></i>Foguete's</h1>
+                    <nav style="background-color: black;" class="navbar navbar-expand-lg navbar-dark">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="nav nav-pills nav-fill">
+                                <li class="nav-item">
+                                  <a class="nav-link active" href="#">Boletim<span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                        <a class="nav-link branco" href="#">Sobre<span class="sr-only">(current)</span></a>
+                                </li>
+                              </ul>
+                              
+                            </div>
+                        </nav>
+            </div>
+        </div>
+
+        <h1 class="text-center branco">SUAP II</h1>
+        <div style="margin-bottom: 2rem">
+    
+       
+        <div id="js-mensagem-view"></div>    
+        
+        <form class="form" onsubmit="boletimC.adiciona(event )">
+            
+            <div class="form-group">
+                <label for="nome" class="branco">Nome</label>
+                <input type="text" id="nome" class="form-control" value="" required autofocus />
+            </div>
+    
+            <div class="form-group">
+                <label for="frequencia" class="branco">Frequencia</label>
+                <input id="frequencia" type="number" class="form-control" min="0" value="" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nota1" class="branco">Nota 1</label>
+                <input id="nota1" type="number" class="form-control" min="0" value="" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nota2" class="branco">Nota 2</label>
+                <input id="nota2" type="number" class="form-control" min="0" value="" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nota3" class="branco">Prova final</label>
+                <input id="nota3" type="number" class="form-control" min="0" value="" >
+            </div>
+            
+            <div class="text-center">
+                <button id="btnCadastro" class="btn btn-primary" type="submit">Cadastrar aluno</button>
+                <button class="btn btn-default" type="reset">Limpar Formulário</button>
+            </div>
+        
+        </form>
+       </div> 
+
+       <div id="js-boletimView">
+        
+       </div>
+
+    </div>
+
+    <script src="js/app/models/FrequenciaBoletim.js"></script>
+    <script src="js/app/models/NotasBoletim.js"></script>
+    <script src="js/app/models/AlunoBoletim.js"></script>
+    <script src="js/app/models/Boletim.js"></script>
+    <script src="js/app/controllers/BoletimController.js"></script>
+    <script src="js/app/views/View.js"></script>
+    <script src="js/app/views/BoletimView.js"></script>
+    <script src="js/app/models/Mensagem.js"></script>
+    <script src="js/app/views/MensagemView.js"></script>
+
+    
+    <script>
+       let boletimC = new BoletimController();
+    </script>
+
+</body>
+</html>
