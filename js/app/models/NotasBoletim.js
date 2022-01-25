@@ -29,12 +29,13 @@ class NotasBoletim {
     }
 
     getMediaFinal(){
+        if(this.getMedia() >= 70){
+            return this.getMedia()
+        }
         return  Number((this.getMedia()+Number(this._nota3))/2)
     }
 
     getAprovacao(){
-        console.log(this.getMedia())
-        console.log(this.getMediaFinal())
         if (this.getMedia() >= 70){
             return true
         }else if(this.getMedia() >= 30){

@@ -8,6 +8,7 @@ class BoletimView extends View {
 
         const aprovado = aluno => aluno.getSituacao() == 'Aprovado'
         const reprovado = aluno => aluno.getSituacao() == 'Reprovado'
+        const soma = (total, aluno) => (Number(total) + Number(aluno.getNotas().getMediaFinal()))
 
         return `
         <table class="table table-hover table-bordered branco">
@@ -38,10 +39,12 @@ class BoletimView extends View {
             </tbody>
 
             <tfoot>
-                <td colspan="2">Aprovados</td>
+                <td>Aprovados</td>
                 <td>${boletim.getAlunos().filter(aprovado).length}</td>
-                <td colspan="2">Reprovados</td>
+                <td>Reprovados</td>
                 <td>${boletim.getAlunos().filter(reprovado).length}</td>
+                <td>Media da Turma</td>
+                <td>${(Number(boletim.getAlunos().reduce(soma,0.0)) / boletim.getAlunos().length).toFixed(2)}</td>
             </tfoot>
             
         </table>
